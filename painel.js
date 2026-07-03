@@ -53,7 +53,7 @@
   var sh=document.getElementById('share');
   if(sh){
     sh.addEventListener('click', function(){
-      var data={title:'Web App Orçamento CGIBS 2026', text:'Web App Orçamento CGIBS 2026 — R$ 981,5 milhões. A primeira proposta orçamentária do CGIBS.', url:location.href};
+      var data={title:'Orçamento CGIBS', text:'Orçamento CGIBS', url:location.href};
       if(navigator.share){ navigator.share(data).catch(function(){}); return; }
       var done=function(){ sh.classList.add('copied'); var t=sh.querySelector('span'); var old=t?t.textContent:''; if(t)t.textContent='Link copiado'; setTimeout(function(){ sh.classList.remove('copied'); if(t)t.textContent=old; },2000); };
       if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(location.href).then(done).catch(function(){ prompt('Copie o link:',location.href); }); }
