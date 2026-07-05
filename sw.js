@@ -1,7 +1,7 @@
 /* Service Worker — Proposta Orçamentária CGIBS 2026
    Estratégia: precache do app shell + cache-first em tempo de execução.
    Troque a versão do cache (vX) ao publicar uma atualização para forçar refresh. */
-const CACHE = 'cgibs-orcamento-v32';
+const CACHE = 'cgibs-orcamento-v33';
 const ASSETS = [
   './',
   'index.html',
